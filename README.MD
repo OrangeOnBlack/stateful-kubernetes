@@ -11,6 +11,8 @@ Load kernel module necessary for Gluster
 
 ``$ sudo modprobe dm_thin_pool``
 
+Install required packages (use default on prompts ENTER)
+
 ``$ sudo add-apt-repository ppa:gluster/glusterfs-5``
 
 ``$ sudo apt update``
