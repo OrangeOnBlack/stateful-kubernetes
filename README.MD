@@ -76,7 +76,7 @@ Install Heketi-CLI Tool
 
 Set user, password and endpoint for ``hetekei-cli``
 
-``$ export HEKETI_CLI_SERVER=http://$(kubectl get endpoints deploy-heketi | awk '{print $2}' | sed -n 2p)``
+``$ export HEKETI_CLI_SERVER=http://$(kubectl get endpoints heketi | awk '{print $2}' | sed -n 2p)``
 
 ``$ curl $HEKETI_CLI_SERVER/hello``
 
