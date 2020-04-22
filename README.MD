@@ -45,7 +45,9 @@ WantedBy=local-fs.target
 
 # Install Gluster using Heteki (Version 9.0)
 ``$ git clone https://github.com/heketi/heketi``
+
 ``$ cd heketi/extras/kubernetes``
+
 ``$ git checkout 891a9966``
 
 ``$ kubectl create -f glusterfs-daemonset.json``
