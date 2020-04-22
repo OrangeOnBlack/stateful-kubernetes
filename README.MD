@@ -131,6 +131,7 @@ Optional: Launch example application using Gluster Volume
 # Reset 
 
 Delete metadata (repeat on every node)
+
 ``$ sudo rm -rf /var/lib/glusterd/vols/heketidbstorage``
 
 ``$ sudo rm -rf /var/lib/glusterd/peers/*``
