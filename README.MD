@@ -52,7 +52,7 @@ WantedBy=local-fs.target
 
 ``$ kubectl create -f glusterfs-daemonset.json``
 
-Label Kubernetes ndoes to be Gluster nodes
+Label Kubernetes nodes to be Gluster nodes
 
 ``kubectl label node <hostname> storagenode=glusterfs``
 
