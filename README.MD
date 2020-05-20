@@ -54,7 +54,7 @@ WantedBy=local-fs.target
 
 Label Kubernetes nodes to be Gluster nodes
 
-``kubectl label node <hostname> storagenode=glusterfs``
+``$ kubectl label node <hostname> storagenode=glusterfs``
 
 ``$ kubectl create -f heketi-service-account.json``
 
