@@ -13,6 +13,8 @@ Load kernel module necessary for Gluster
 
 Install required packages (use default on prompts ENTER)
 
+``$ sudo apt-get install software-properties-common``
+
 ``$ sudo add-apt-repository ppa:gluster/glusterfs-5``
 
 ``$ sudo apt update``
@@ -44,6 +46,7 @@ WantedBy=local-fs.target
 ``$ sudo systemctl enable /etc/systemd/system/loop_gluster.service``
 
 # Install Gluster using Heteki (Version 9.0)
+
 ``$ git clone https://github.com/heketi/heketi``
 
 ``$ cd heketi/extras/kubernetes``
