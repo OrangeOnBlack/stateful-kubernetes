@@ -43,7 +43,7 @@ WantedBy=local-fs.target
 
 ``$ sudo systemctl enable /etc/systemd/system/loop_gluster.service``
 
-# Install Gluster using Heteki (Version 9.0)
+# Install Gluster using Heketi (Version 9.0)
 
 ``$ git clone https://github.com/heketi/heketi``
 
