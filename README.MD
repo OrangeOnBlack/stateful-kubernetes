@@ -13,13 +13,11 @@ Load kernel module necessary for Gluster
 
 Install required packages (use default on prompts ENTER)
 
-``$ sudo apt-get install software-properties-common``
+``$ sudo apt-get install -y software-properties-common``
 
 ``$ sudo add-apt-repository ppa:gluster/glusterfs-5``
 
 ``$ sudo apt update``
-
-``$ sudo apt-get install -y software-properties-common``
 
 ``$ sudo apt-get install -y glusterfs-client``
 
