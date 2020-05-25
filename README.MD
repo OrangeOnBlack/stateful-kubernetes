@@ -101,6 +101,8 @@ Load topology file
 
 Initialise storage
 
+``$ heketi-cli setup-openshift-heketi-storage``
+
 ``$ kubectl create -f heketi-storage.json``
 
 ``$ kubectl delete all,service,jobs,deployment,secret --selector="deploy-heketi"``
