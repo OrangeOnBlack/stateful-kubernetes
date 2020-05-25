@@ -115,11 +115,11 @@ Start to permanent heketi deployment
 
 Update endpoint
 
-``$ export HEKETI_CLI_SERVER=http://$(kubectl get endpoints deploy-heketi | awk '{print $2}' | sed -n 2p)``
+``$ export HEKETI_CLI_SERVER=http://$(kubectl get endpoints heketi | awk '{print $2}' | sed -n 2p)``
 
 In ``storage-class`.yaml`` edit ``Resturl`` to match the endpoint, which can be obtained with the following command
 
-``$ kubectl get endpoints deploy-heketi | awk '{print $2}' | sed -n 2p``
+``$ kubectl get endpoints heketi | awk '{print $2}' | sed -n 2p``
 
 Create Kubernetes Storage Class
 
