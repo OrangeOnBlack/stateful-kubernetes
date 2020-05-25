@@ -19,7 +19,7 @@ Install required packages (use default on prompts ENTER)
 
 ``$ sudo apt update``
 
-``$ sudo apt-get install -y glusterfs-client``
+``$ sudo apt-get install -y glusterfs-common glusterfs-server glusterfs-client``
 
 
 Automatically load kernel module and mount image on reboot
@@ -42,6 +42,10 @@ WantedBy=local-fs.target
 ```
 
 ``$ sudo systemctl enable /etc/systemd/system/loop_gluster.service``
+
+Disable ``glusterd `` on all nodes
+
+``$ sudo systemctl disable --now glusterd``
 
 # Install Gluster using Heketi (Version 9.0)
 
@@ -79,7 +83,7 @@ Install Heketi-CLI Tool
 
 Set user, password and endpoint for ``hetekei-cli``
 
-``$ export HEKETI_CLI_SERVER=http://$(kubectl get endpoints heketi | awk '{print $2}' | sed -n 2p)``
+``$ export HEKETI_CLI_SERVER=http://$(kubectl get endpoints deploy-heketi | awk '{print $2}' | sed -n 2p)``
 
 ``$ curl $HEKETI_CLI_SERVER/hello``
 
