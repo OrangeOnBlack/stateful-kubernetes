@@ -123,15 +123,15 @@ In ``storage-class.yaml`` edit ``resturl`` to match the endpoint, which can be o
 
 Create Kubernetes Storage Class
 
-``$ kubectl -f storage-class.yaml``
+``$ kubectl create -f storage-class.yaml``
 
 Create Kubernetes Persistent Volume Claim
 
-``$ kubectl -f persistent-volume-claim.yaml``
+``$ kubectl create -f persistent-volume-claim.yaml``
 
 Optional: Launch example application using Gluster Volume
 
-``$ kubectl -f example-nginx.yaml``
+``$ kubectl create  -f example-nginx.yaml``
 
 
 
