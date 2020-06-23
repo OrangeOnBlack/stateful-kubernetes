@@ -81,7 +81,7 @@ Install Heketi-CLI Tool
 ``$ rm -rf heketi-client-v9.0.0.linux.amd64.tar.gz``
 
 
-Set user, password and endpoint for ``hetekei-cli``
+Set user, password and endpoint for ``heketi-cli``
 
 ``$ export HEKETI_CLI_SERVER=http://$(kubectl get endpoints deploy-heketi | awk '{print $2}' | sed -n 2p)``
 
