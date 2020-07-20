@@ -1,5 +1,6 @@
-# Prerequisites
-Create image file to be used for Gluster storage (10 GB)
+# Prerequisites (Run on all nodes)
+
+Create image file to be used for Gluster storage (10 GB; adapt this according to your needs)
 
 ``$ dd if=/dev/zero of=/home/user/image bs=1M count=10000``
 
@@ -47,7 +48,7 @@ Disable ``glusterd `` on all nodes
 
 ``$ sudo systemctl disable --now glusterd``
 
-# Install Gluster using Heketi (Version 9.0)
+# Install Gluster using Heketi (Version 9.0; Run only on Master Node)
 
 ``$ git clone https://github.com/heketi/heketi``
 
