@@ -44,7 +44,7 @@ WantedBy=local-fs.target
 
 ``$ sudo systemctl enable /etc/systemd/system/loop_gluster.service``
 
-Disable ``glusterd `` on all nodes
+Disable ``glusterd`` on all nodes
 
 ``$ sudo systemctl disable --now glusterd``
 
@@ -108,7 +108,7 @@ Initialise storage
 
 ``$ kubectl delete all,service,jobs,deployment,secret --selector="deploy-heketi"``
 
-Start to permanent heketi deployment
+Start permanent heketi deployment
 
 ``$ cd heketi/extras/kubernetes``
 
